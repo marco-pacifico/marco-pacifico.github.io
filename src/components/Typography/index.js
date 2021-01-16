@@ -5,7 +5,7 @@ import theme from '../Theme'
 
 export const navitem = css`
   font-size: min(${theme.fontSize.pmin}, max(18px, ${theme.fontSize.t5}));
-  line-height: ${theme.lineHeight.ploose}
+  line-height: none;
   font-weight: 400;
   color: var(--color-text-primary);
 `
@@ -67,6 +67,11 @@ export const h4 = css`
 export const H4 = styled.h4`
   ${h4};
 `
+export const H4L = styled.h4`
+  ${h4};
+  color: var(--color-text-tertiary);
+  margin-bottom: 0;
+`
 
 export const p = css`
   font-size: ${theme.fontSize.t4};
@@ -116,7 +121,7 @@ export const MDH2 = styled.h2`
 export const MDP = styled.p`
   font-family: ${theme.fonts.serif};
   font-size: min(${theme.fontSize.pmax}, max(${theme.fontSize.pmin}, ${theme.fontSize.t4}));
-  line-height: ${theme.lineHeight.ploose}
+  line-height: ${theme.lineHeight.ptight};
   font-weight: 400;
   color: var(--color-text-secondary);
   margin-top: min(24px, max(12px, ${theme.space.s5}));
@@ -132,9 +137,9 @@ export const blockquote = css`
   &:before {
     content: '';
     height: 100%;
-    width: 4px;
+    width: 3px;
     border-radius: 4px;
-    background: var(--color-text-tertiary);
+    background: var(--color-border-tertiary);
     position: absolute;
     left: 0;
     z-index: -1;
@@ -160,12 +165,12 @@ export const Blockquote = styled.blockquote`
 export const list = css`
   font-family: ${theme.fonts.serif};
   font-size: min(${theme.fontSize.pmax}, max(${theme.fontSize.pmin}, ${theme.fontSize.t3}));
-  line-height: ${theme.lineHeight.ploose}
+  line-height: ${theme.lineHeight.ptight};
   font-weight: 400;
   color: var(--color-text-secondary);
   margin-bottom: ${theme.space.s3};
   margin-left: ${theme.space.s3};
-  margin-top: min(24px, max(12px, ${theme.space.s5}));
+  margin-top: min(24px, max(12px, ${theme.space.s5})); 
   padding-bottom: min(24px, max(12px, ${theme.space.s5}));
   
 `

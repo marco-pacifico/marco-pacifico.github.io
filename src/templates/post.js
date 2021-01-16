@@ -32,7 +32,7 @@ const markdownStyles = {
 
 const PageContainer = styled.div`
   padding: ${theme.space.site};
-  border-bottom: 1px solid var(--color-border-primary);
+  border-bottom: 1px solid var(--color-border-tertiary);
 `
 
 const PostContainer = styled.div`

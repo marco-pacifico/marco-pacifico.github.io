@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import theme from "../Theme"
-import {H4, P} from '../Typography'
+import {H4, H4L} from '../Typography'
 
 const CardContaner = styled.div `
     display: flex;
@@ -9,12 +9,12 @@ const CardContaner = styled.div `
     justify-content: space-between;
     max-width: 80vw;
     padding: ${theme.space.s2} 0;
-    border-bottom: 1px solid var(--color-border-secondary); 
+    border-bottom: 1px solid var(--color-border-tertiary); 
     transition: all .25s ease-out;
 
     &:hover {
         z-index: 100;
-        border-bottom: 1px solid var(--color-text-primary); 
+        border-bottom: 1px solid var(--color-border-tertiary); 
         
     }
 
@@ -39,7 +39,7 @@ const PostCard = props => (
         <CardContaner>
             <DescriptionContainer>
                 <H4><a href="/" style={{borderBottom:`none`}}>{props.title}</a></H4>
-                <P>{props.description}</P>
+                <H4L>{props.description}</H4L>
             </DescriptionContainer>
         </CardContaner>
     

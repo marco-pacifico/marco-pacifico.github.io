@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
 import theme from "../Theme"
-import {H3} from '../Typography'
+import {H2} from '../Typography'
 import PostCard from "../PostCard"
 
 
@@ -41,7 +41,7 @@ const SeeMorePosts = ({ posts }) => {
     return (
         <SectionContainer>
             <HeadingContainer>
-                <H3>More posts</H3>
+                <H2>More posts</H2>
             </HeadingContainer>
             <ArticleUL>
                 {postsToShow.map(({ node }) => {

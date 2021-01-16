@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import theme from "../Theme"
-import {H2, H4} from '../Typography'
+import {H2, H4L} from '../Typography'
 
 
 const SectionContainer = styled.div`
@@ -9,7 +9,7 @@ const SectionContainer = styled.div`
   display: flex;
   height: calc(100vh - 80px);
   padding: 0 ${theme.space.site};
-  border-bottom: 1px solid var(--color-border-primary);
+  border-bottom: 1px solid var(--color-border-tertiary);
 `
 
 const LeftContainer = styled.div`
@@ -19,8 +19,8 @@ const LeftContainer = styled.div`
 
 const Title = styled.div `
     margin-bottom: ${theme.space.s3};
-    padding-bottom: ${theme.space.s3};
-    border-bottom: 2px solid var(--color-border-primary);
+    padding-top: ${theme.space.s3};
+    border-top: 1px solid var(--color-border-tertiary);
 `
 
 const RightContainer = styled.div`
@@ -41,7 +41,7 @@ const ArticleHero = props => (
             <Title>
                 <H2>{props.title}</H2>
             </Title>
-            <H4>{props.body}</H4>
+            <H4L>{props.body}</H4L>
         </LeftContainer>
         <RightContainer>
             <HeroImage src={props.image} />
