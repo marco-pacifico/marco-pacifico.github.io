@@ -13,7 +13,7 @@ const SectionContainer = styled.div`
   flex-direction: column;
   height: 76vh;
   padding: auto 0;
-  border-bottom: 2px solid var(--color-text-primary); 
+  border-bottom: 1px solid var(--color-border-tertiary); 
 `
 
 const HeadingContainer = styled.div`

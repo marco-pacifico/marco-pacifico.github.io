@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import theme from "../Theme"
-import {H4, P, OVERLINE} from '../Typography'
+import {H4, H4L, OVERLINE} from '../Typography'
 
 const ProjectThumbnail = styled.img`
   display: block;
@@ -21,12 +21,12 @@ const CardContaner = styled.div `
     height: calc(20vw + 8vw);
     padding-top: ${theme.space.s2};
     padding-bottom: ${theme.space.s2};
-    border-bottom: 1px solid var(--color-border-secondary); 
+    border-bottom: 1px solid var(--color-border-tertiary); 
     transition: all .25s ease-out;
 
     &:hover {
         z-index: 100;
-        border-bottom: 1px solid var(--color-text-primary); 
+        border-bottom: 1px solid var(--color-border-tertiary); 
         
     }
 
@@ -56,7 +56,7 @@ const ProjectCard = props => (
             <DescriptionContainer>
                 <OVERLINE>{props.overline}</OVERLINE>
                 <H4><a href="/" style={{borderBottom:`none`}}>{props.title}</a></H4>
-                <P>{props.description}</P>
+                <H4L>{props.description}</H4L>
             </DescriptionContainer>
             <ProjectThumbnail src={props.image} />
         </CardContaner>

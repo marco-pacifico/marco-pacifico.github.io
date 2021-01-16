@@ -49,17 +49,9 @@ const GlobalStyles = createGlobalStyle`
   a {
     color: currentColor;
     text-decoration: none;
-    border-bottom: 1px solid var(--color-border-secondary);
-    padding-bottom: 2px;
+    border-bottom: 1px solid var(--color-border-tertiary);
+    padding-bottom: 8px;
     position: relative;
-
-    background-image: -webkit-gradient(linear,left top,left bottom,color-stop(65% transparent),color-stop(90%,var(--color-accent)));
-    background-image: linear-gradient(180deg,transparent 65%,var(--color-accent) 0);
-    background-size: 0 100%;
-    background-repeat: no-repeat;
-    text-decoration: none;
-    -webkit-transition: background-size .25s ease-out;
-    transition: background-size .25s ease-out;
     }
 
     a::after {
@@ -69,7 +61,7 @@ const GlobalStyles = createGlobalStyle`
         display: block;
         width: 100%;
         height: 1px;
-        background-color: var(--color-border-primary);
+        background-color: var(--color-border-secondary);
         position: absolute;
         visibility: hidden;
         transform-origin: bottom left;
@@ -79,7 +71,6 @@ const GlobalStyles = createGlobalStyle`
 
   a:hover {
     cursor: pointer;
-    background-size: 100% 100%;
     color: var(--color-text-primary);
   }
 
@@ -94,7 +85,7 @@ const GlobalStyles = createGlobalStyle`
   }
   main {
     a:visited {
-      color: var(--color-accent);
+      color: var(--color-text-fourth);
     }
   }
   ::-moz-selection {
