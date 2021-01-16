@@ -9,7 +9,7 @@ const DarkToggle = () => {
   }
 
   return (
-    <label>
+    <label style={{ cursor: "pointer" }}>
       <input
         type="checkbox"
         checked={colorMode === 'dark'}
@@ -17,7 +17,7 @@ const DarkToggle = () => {
           setColorMode(ev.target.checked ? 'dark' : 'light');
         }}
       />{' '}
-      Dark
+      🌗
     </label>
   );
 };

@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import theme from "../Theme"
-import {H2, H4L} from '../Typography'
+import {H1, H4L} from '../Typography'
 
 
 const SectionContainer = styled.div`
@@ -39,7 +39,7 @@ const ArticleHero = props => (
     <SectionContainer>
         <LeftContainer>
             <Title>
-                <H2>{props.title}</H2>
+                <H1>{props.title}</H1>
             </Title>
             <H4L>{props.body}</H4L>
         </LeftContainer>

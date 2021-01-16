@@ -7,7 +7,6 @@ import {NAVITEM} from '../Typography'
 
 
 const NavBar = styled.div`
-  
   display: flex;
   padding: ${theme.space.s3} ${theme.space.s2} ${theme.space.s3} ${theme.space.site};
   justify-content: space-between;
@@ -17,6 +16,10 @@ const NavBar = styled.div`
   background: var(--color-background); 
   border-bottom: 1px solid var(--color-border-tertiary); 
   z-index: 1000;
+
+  @media (max-width: 768px) {
+    padding: ${theme.space.s2} ${theme.space.site};
+  }
 `;
 
 
@@ -38,22 +41,25 @@ const NavLinks = styled.div `
 const NavWork = styled.div`
     margin-right: 40px;
     align-self: center;
+    display: none;
     
 `
 
 const NavWriting = styled.div`
     margin-right: 40px;
     align-self: center;
+    display: none;
     
 `
 const NavToggle = styled.div`
-    margin-right: 40px;
+    /* margin-right: 40px; */
     align-self: center;
     
 `
 
 const NavAbout = styled.div`
     align-self: center;
+    display: none;
     
 `
 function Nav() {
