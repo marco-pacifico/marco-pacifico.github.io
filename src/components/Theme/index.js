@@ -46,7 +46,7 @@ const theme = {
       code: 1.6,
     },
     letterSpacing: {
-      tight: '-0.02rem',
+      tight: '-0.05rem',
       loose: '0.08rem',
     },
 

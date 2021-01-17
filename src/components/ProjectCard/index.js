@@ -5,29 +5,29 @@ import {H4, H4L, OVERLINE} from '../Typography'
 
 const ProjectThumbnail = styled.img`
   display: block;
-  height: 20vw;
-  border-radius: 1rem;
+  /* height: 20vw; */ 
+  width: 100%;
+  border-radius: max(8px,1rem);
   margin-left: 0;
-  margin-right: ${theme.space.s1};
+  margin-bottom: max(16px,${theme.space.s3});
   transition: all .3s ease-out;
-  align-self: center;
+  align-self: start;
 `
 
 const CardContaner = styled.div `
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column-reverse;
     justify-content: space-between;
-    max-width: 80vw;
-    height: calc(20vw + 8vw);
-    padding-top: ${theme.space.s2};
-    padding-bottom: ${theme.space.s2};
-    border-bottom: 1px solid var(--color-border-tertiary); 
+    padding-bottom: max(16px,${theme.space.s3});
+    /* max-width: 80vw; */
+    /* height: calc(20vw + 8vw); */
+    
+     
     transition: all .25s ease-out;
 
     &:hover {
         z-index: 100;
-        border-bottom: 1px solid var(--color-border-tertiary); 
-        
+        /* border-top: 1px solid var(--color-border-tertiary); */
     }
 
     &:hover ${H4} a {
@@ -46,8 +46,7 @@ const CardContaner = styled.div `
 `
 
 const DescriptionContainer = styled.div`
-    width: 60%;
-    align-self: center;
+    align-self: start;
 `
 
 const ProjectCard = props => (
@@ -60,7 +59,6 @@ const ProjectCard = props => (
             </DescriptionContainer>
             <ProjectThumbnail src={props.image} />
         </CardContaner>
-    
 )
     
 export default ProjectCard
