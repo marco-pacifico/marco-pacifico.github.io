@@ -175,10 +175,9 @@ export const Blockquote = styled.blockquote`
 
 export const list = css`
   font-family: ${theme.fonts.serif};
-  font-size: min(${theme.fontSize.pmax}, max(${theme.fontSize.pmin}, ${theme.fontSize.t3}));
+  font-size: min(${theme.fontSize.pmax}, max(${theme.fontSize.pmin}, ${theme.fontSize.t4}));
   line-height: ${theme.lineHeight.ptight};
   font-weight: 400;
-  color: var(--color-text-secondary);
   margin-bottom: max(24px,${theme.space.s3});
   margin-left: max(24px,${theme.space.s3});
   margin-top: min(24px, max(12px, ${theme.space.s5})); 
