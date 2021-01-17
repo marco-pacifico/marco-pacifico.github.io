@@ -17,7 +17,7 @@ export const NAVITEM = styled.p`
 // HOMEPAGE STYLES
 
 export const h1 = css`
-    font-size: min(80px, max(36px, ${theme.fontSize.t1}));
+    font-size: min(96px, max(36px, ${theme.fontSize.t1}));
     line-height: ${theme.lineHeight.htight};
     font-weight: 300;
     letter-spacing: ${theme.letterSpacing.tight};
@@ -33,7 +33,7 @@ export const H1A = styled.h1`
 `
 
 export const h2 = css`
-    font-size: min(80px, max(32px,${theme.fontSize.t2}));
+    font-size: min(96px, max(32px,${theme.fontSize.t2}));
     line-height: ${theme.lineHeight.hloose};
     font-weight: 300;
     letter-spacing: ${theme.letterSpacing.tight};
@@ -110,14 +110,14 @@ export const OVERLINE = styled.p`
 export const MDH1 = styled.h1 `
   font-size: min(38px, max(28px, ${theme.fontSize.t3}));
   line-height: ${theme.lineHeight.htight};
-  font-weight: 400;
+  font-weight: 500;
   margin-top: min(80px, max(64px, ${theme.space.s3}));
   padding-bottom: 16px;
 `
 export const MDH2 = styled.h2`
   font-size: min(30px, max(${theme.fontSize.pmid}, ${theme.fontSize.th2}));
   line-height: ${theme.lineHeight.hloose};
-  font-weight: 400;
+  font-weight: 500;
   margin-top: min(80px, max(64px, ${theme.space.s3}));
   padding-bottom: 8px;
 `
