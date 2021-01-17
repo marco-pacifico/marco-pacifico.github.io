@@ -7,7 +7,7 @@ import {H1, H4L} from '../Typography'
 const SectionContainer = styled.div`
   width:100%;
   display: flex;
-  height: 70vh;
+  height: 75vh;
   padding: 0 ${theme.space.site};
   border-bottom: 1px solid var(--color-border-tertiary);
 `

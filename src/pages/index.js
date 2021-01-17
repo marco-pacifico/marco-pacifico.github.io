@@ -9,7 +9,7 @@ import { graphql } from "gatsby"
 const Home = ({ data }) => (
     <Layout>
         <HeroSection data={data.hero.edges} />
-        <WorkSection content={data.work.edges} articles={data.projects.edges} />
+        <WorkSection content={data.work.edges} projects={data.projects.edges} />
         <WritingSection content={data.writing.edges} articles={data.posts.edges} />
     </Layout>
 )
@@ -59,7 +59,7 @@ export const query = graphql`
       }
     }
 
-    posts: allMdx (filter: { fileAbsolutePath: { regex: "/content/posts/" } })
+    posts: allMdx (filter: { fileAbsolutePath: { regex: "/content/posts/" } }, sort: {order: DESC, fields: frontmatter___date})
       {
         edges {
           node {
@@ -78,7 +78,7 @@ export const query = graphql`
         }
       }
 
-      projects: allMdx (filter: { fileAbsolutePath: { regex: "/content/projects/" } })
+      projects: allMdx (filter: { fileAbsolutePath: { regex: "/content/projects/" } }, sort: {order: DESC, fields: frontmatter___date})
       {
         edges {
           node {

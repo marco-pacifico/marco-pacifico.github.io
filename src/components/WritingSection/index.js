@@ -19,7 +19,7 @@ const HeadingContainer = styled.div`
 `
 const BodyContainer = styled.div`
     padding-top: max(16px, ${theme.space.s3});
-    margin-bottom: max(24px, ${theme.space.s2});
+    margin-bottom: max(16px, ${theme.space.s3});
     width: 70vw;
 
     @media (max-width: 480px) {
@@ -38,17 +38,11 @@ const ArticleLI = styled.li `
         border-bottom: none;
     }   
 
-
-`
-const MoreButton = styled.button `
-    margin: 100px auto;
-    background: transparent;
-
 `
 
-const ContentSection = ({ content, articles }) => {
+const WritingSection = ({ content, articles }) => {
     const [showMore, setShowMore] = useState(false)
-    const articleLimit = 6
+    const articleLimit = 10
     const firstArticles = articles.slice(0, articleLimit);
     const articlesToShow = showMore ? articles : firstArticles;
 
@@ -64,7 +58,7 @@ const ContentSection = ({ content, articles }) => {
                 {articlesToShow.map(({ node }) => {
                     const { fields, frontmatter } = node
                     const { slug } = fields
-                    const { company, title, description, cardImage } = frontmatter
+                    const { company, title, description } = frontmatter
                 
                     return (
                         <ArticleLI key={slug}>
@@ -85,6 +79,6 @@ const ContentSection = ({ content, articles }) => {
 }
 
     
-export default ContentSection
+export default WritingSection
 
 

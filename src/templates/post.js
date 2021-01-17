@@ -92,7 +92,7 @@ const PostTemplate = ({ data }) => {
         }
       }
 
-      morePosts: allMdx (filter: { fileAbsolutePath: { regex: "/content/posts/" }, fields: {slug: {ne: $path}} })
+      morePosts: allMdx (filter: { fileAbsolutePath: { regex: "/content/posts/" }, fields: {slug: {ne: $path}} }, sort: {order: DESC, fields: frontmatter___date})
       {
         edges {
           node {
