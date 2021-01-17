@@ -9,39 +9,70 @@ import ProjectCard from "../ProjectCard"
 
 
 const SectionContainer = styled.div`
-  max-width: 80vw;
-  margin-left: ${theme.space.site};
+  margin: 0 ${theme.space.site};
 `
 
 const HeadingContainer = styled.div`
-  padding-top: ${theme.space.s1};
-  width: 80vw;
+  padding-top: max(24px, ${theme.space.s1});
 `
 const BodyContainer = styled.div`
-    padding-top: ${theme.space.s3};
-    padding-bottom: ${theme.space.s2};
+    padding-top: max(16px, ${theme.space.s3});
+    margin-bottom: max(32px, ${theme.space.s1});
     width: 70vw;
+
+    @media (max-width: 480px) {
+        width: 100%;
+  }
+
+    
 `
-const ArticleUL = styled.ul `
-    list-style-type: none;
+const ProjectGrid = styled.div `
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: max(16px, ${theme.space.s2});
+    /*grid-gap: max(24px, ${theme.space.s2}); */
+
+    @media (max-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 480px) {
+    grid-template-columns: 1fr;
+    grid-gap: none;
+  }
 
 `
-const ArticleLI = styled.li `
+
+const Project = styled.div `
+    border-bottom: none;
+    border-right: 1px solid var(--color-border-tertiary);
+    padding-right: max(16px, ${theme.space.s2});
     
-    &last-of-type ${ProjectCard} {
-        border-bottom: none;
+    &:nth-child(3) {
+        border-right: none;
     }   
 
-`
-const MoreButton = styled.button `
-    margin: 100px auto;
-    background: transparent;
+    @media (max-width: 768px) {
+        &:nth-child(2) {
+        border-right: none;
+  }
 
+  @media (max-width: 480px) {
+        border-right: none;
+        padding-right: 0;
+  }
+    
+`
+
+const MoreButton = styled.button `
+    width: 100%;
+    margin: ${theme.space.s2} auto;
+    background: transparent;
 `
 
 const WorkSection = ({ content, articles }) => {
     const [showMore, setShowMore] = useState(false)
-    const articleLimit = 2
+    const articleLimit = 3
     const firstArticles = articles.slice(0, articleLimit);
     const articlesToShow = showMore ? articles : firstArticles;
 
@@ -53,7 +84,7 @@ const WorkSection = ({ content, articles }) => {
             <BodyContainer>
                 <H3><MDXRenderer>{content[0].node.body}</MDXRenderer></H3>
             </BodyContainer>
-            <ArticleUL>
+            <ProjectGrid>
                 {articlesToShow.map(({ node }) => {
                     const { fields, frontmatter } = node
                     const { slug } = fields
@@ -61,7 +92,7 @@ const WorkSection = ({ content, articles }) => {
                     const { publicURL } = cardImage
                 
                     return (
-                        <ArticleLI key={slug}>
+                        <Project> 
                             <Link to={slug}>
                                 <ProjectCard
                                     overline={company}
@@ -70,11 +101,11 @@ const WorkSection = ({ content, articles }) => {
                                     image={publicURL}
                                 />
                             </Link>
-                        </ArticleLI> 
+                        </Project>
                         )
                     }
                 )}
-            </ArticleUL>
+            </ProjectGrid>
             <MoreButton onClick={() => setShowMore(!showMore)}>
                 <H4>Show {showMore ? 'fewer' : 'more'}</H4>
             </MoreButton>

@@ -8,13 +8,14 @@ import PostCard from "../PostCard"
 
 
 const SectionContainer = styled.div`
-  max-width: 80vw;
-  margin-left: ${theme.space.site};
+  padding-bottom: ${theme.space.s1};
+  margin: ${theme.space.site};
+  margin-bottom: max(40px, ${theme.space.s1});
 `
 
 const HeadingContainer = styled.div`
-  padding-top: ${theme.space.s1};
-  width: 80vw;
+  padding-top: max(24px, ${theme.space.s1});
+  margin-bottom: max(16px, ${theme.space.s3});
 `
 
 const ArticleUL = styled.ul `
@@ -22,11 +23,11 @@ const ArticleUL = styled.ul `
 
 `
 const ArticleLI = styled.li `
+    border-bottom: 1px solid var(--color-border-tertiary); 
     
-    &last-of-type ${PostCard} {
+    &:last-of-type {
         border-bottom: none;
     }   
-
 `
 const MoreButton = styled.button `
     margin: 100px auto;

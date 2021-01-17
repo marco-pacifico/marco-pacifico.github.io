@@ -7,16 +7,9 @@ const CardContaner = styled.div `
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
-    max-width: 80vw;
-    padding: ${theme.space.s2} 0;
-    border-bottom: 1px solid var(--color-border-tertiary); 
+    max-width: max(100%,80vw);
+    padding: max(24px, ${theme.space.s2}) 0; 
     transition: all .25s ease-out;
-
-    &:hover {
-        z-index: 100;
-        border-bottom: 1px solid var(--color-border-tertiary); 
-        
-    }
 
     &:hover ${H4} a {
         background-size: 100% 100%;

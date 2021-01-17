@@ -17,13 +17,12 @@ export const NAVITEM = styled.p`
 // HOMEPAGE STYLES
 
 export const h1 = css`
-    font-size: ${theme.fontSize.t1};
+    font-size: min(80px, max(36px, ${theme.fontSize.t1}));
     line-height: ${theme.lineHeight.htight};
     font-weight: 300;
     letter-spacing: ${theme.letterSpacing.tight};
     }
 `
-
 export const H1 = styled.h1`
   ${h1};
 `
@@ -34,7 +33,7 @@ export const H1A = styled.h1`
 `
 
 export const h2 = css`
-    font-size: ${theme.fontSize.t2};
+    font-size: min(80px, max(32px,${theme.fontSize.t2}));
     line-height: ${theme.lineHeight.hloose};
     font-weight: 300;
     letter-spacing: ${theme.letterSpacing.tight};
@@ -45,8 +44,13 @@ export const H2 = styled.h2`
   ${h2};
 `
 
+export const H2A = styled.h1`
+  ${h2};
+  color: var(--color-text-tertiary);
+`
+
 export const h3 = css`
-  font-size: ${theme.fontSize.t3};
+  font-size: min(72px, max(22px,${theme.fontSize.t3}));
   line-height: ${theme.lineHeight.ptight};
   font-weight: 300;
   color: var(--color-text-primary);
@@ -58,7 +62,7 @@ export const H3 = styled.h3`
 `
 
 export const h4 = css`
-  font-size: ${theme.fontSize.t4};
+  font-size: min(24px, max(18px,${theme.fontSize.t4}));
   line-height: ${theme.lineHeight.hloose};
   font-weight: 500;
   margin-bottom: ${theme.space.s4};
@@ -85,13 +89,13 @@ export const P = styled.p`
 `
 
 export const caption = css`
-  font-size: ${theme.fontSize.t6};
+  font-size: max(12px,${theme.fontSize.t6});
   line-height: ${theme.lineHeight.ploose};
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: ${theme.letterSpacing.loose};
   color: var(--color-text-secondary);
-  margin-bottom: ${theme.space.s5};
+  margin-bottom: max(8px,${theme.space.s5});
 `
 
 export const OVERLINE = styled.p`
@@ -104,7 +108,7 @@ export const OVERLINE = styled.p`
 
 
 export const MDH1 = styled.h1 `
-  font-size: min(38px, max(32px, ${theme.fontSize.t3}));
+  font-size: min(38px, max(28px, ${theme.fontSize.t3}));
   line-height: ${theme.lineHeight.htight};
   font-weight: 500;
   margin-top: min(80px, max(64px, ${theme.space.s3}));
@@ -129,10 +133,10 @@ export const MDP = styled.p`
 `
 export const blockquote = css`
   width: 150%;
-  padding-left: ${theme.space.s3};
+  padding-left: max(16px,${theme.space.s3});
   display: block;
   position: relative;
-  margin: ${theme.space.s2} 0;
+  margin: max(24px,${theme.space.s2}) 0;
   z-index: -1;
   &:before {
     content: '';
@@ -148,14 +152,21 @@ export const blockquote = css`
   p {
     ${h3};
     font-family: ${theme.fonts.sans};
-    padding-bottom: ${theme.space.s7};
+    *padding-bottom: max(4px,${theme.space.s7});
+    
   }
 
   figcaption {
     ${caption};
     font-family: ${theme.fonts.sans};
     text-transform: none;
-    margin-top: ${theme.space.s4};
+    margin-top: max(8px,${theme.space.s4});
+    margin-bottom: 0;
+  
+  }
+
+  @media (max-width: 480px) {
+    width: 100%;
   }
 `
 export const Blockquote = styled.blockquote`
@@ -168,8 +179,8 @@ export const list = css`
   line-height: ${theme.lineHeight.ptight};
   font-weight: 400;
   color: var(--color-text-secondary);
-  margin-bottom: ${theme.space.s3};
-  margin-left: ${theme.space.s3};
+  margin-bottom: max(24px,${theme.space.s3});
+  margin-left: max(24px,${theme.space.s3});
   margin-top: min(24px, max(12px, ${theme.space.s5})); 
   padding-bottom: min(24px, max(12px, ${theme.space.s5}));
   
@@ -183,8 +194,8 @@ export const Ol = styled.ol`
   ${list};
 `
 export const listItem = css`
-  margin-bottom: ${theme.space.s5};
-  padding-left: ${theme.space.s7};
+  margin-bottom: max(8px,${theme.space.s5});
+  padding-left: max(4px, ${theme.space.s7});
   line-height: ${theme.lineHeight.ptight};
 `
 export const Li = styled.li`

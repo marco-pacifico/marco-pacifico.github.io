@@ -2,21 +2,19 @@ import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
 import theme from "../Theme"
-import {H2, H4} from '../Typography'
+import {H1, H4} from '../Typography'
 
 
 
 const SectionContainer = styled.div`
   max-width: 100vw;
-
-  margin-top: ${theme.space.s0};
-  padding-bottom: ${theme.space.s1};
+  padding: max(40px,${theme.space.s1}) 0;
   padding-left: ${theme.space.site};
+  
 `
 
 const HeadingContainer = styled.div`
-  padding-top: ${theme.space.s0};
-  padding-bottom: ${theme.space.s3};
+  margin-bottom: max(24px,${theme.space.s3});
   width: 80vw;
 `
 const BodyContainer = styled.div`
@@ -29,7 +27,7 @@ const ArticleUL = styled.ul `
 
 `
 const ArticleLI = styled.li `
-    margin-bottom: ${theme.space.s3};
+    margin-bottom: max(24px,${theme.space.s3});
 
 `
 
@@ -38,7 +36,7 @@ const Footer = () => {
         <footer>
             <SectionContainer>
                 <HeadingContainer>
-                    <H2>Say hello</H2>
+                    <H1>Say hello</H1>
                 </HeadingContainer>
                 <BodyContainer>
                     <ArticleUL>

@@ -31,13 +31,18 @@ const markdownStyles = {
 
 
 const PageContainer = styled.div`
-  padding: ${theme.space.site};
+  padding: ${theme.space.site} 0;
+  padding-bottom: max(80px, ${theme.space.s0});
   border-bottom: 1px solid var(--color-border-tertiary);
 `
 
 const PostContainer = styled.div`
-    width: 62ch;
+    width: 64ch;
     margin: 0 auto;
+
+    @media (max-width: 480px) {
+      width: 80%;
+  }
 `
 
 const PostTemplate = ({ data }) => {

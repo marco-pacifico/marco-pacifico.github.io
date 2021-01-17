@@ -10,28 +10,34 @@ import PostCard from "../PostCard"
 
 const SectionContainer = styled.div`
   padding-bottom: ${theme.space.s1};
-  max-width: 80vw;
-  margin-left: ${theme.space.site};
+  margin: ${theme.space.site};
+  margin-bottom: max(40px, ${theme.space.s1});
 `
 
 const HeadingContainer = styled.div`
-  padding-top: ${theme.space.s1};
-  width: 80vw;
+  padding-top: max(24px, ${theme.space.s1});
 `
 const BodyContainer = styled.div`
-    padding-top: ${theme.space.s3};
-    padding-bottom: ${theme.space.s2};
+    padding-top: max(16px, ${theme.space.s3});
+    margin-bottom: max(24px, ${theme.space.s2});
     width: 70vw;
+
+    @media (max-width: 480px) {
+        width: 100%;
+    }
 `
 const ArticleUL = styled.ul `
     list-style-type: none;
 
 `
 const ArticleLI = styled.li `
+
+    border-bottom: 1px solid var(--color-border-tertiary); 
     
-    &last-of-type ${PostCard} {
+    &:last-of-type {
         border-bottom: none;
     }   
+
 
 `
 const MoreButton = styled.button `
