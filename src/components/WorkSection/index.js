@@ -136,7 +136,7 @@ const WorkSection = ({ content, projects }) => {
             </ProjectGrid>
             <ButtonSection>
                 <MoreButton onClick={() => setShowMore(!showMore)}>
-                    <H4 style={{margin:0}}>Show {showMore ? 'fewer' : 'more'}</H4>
+                    <H4 style={{margin:0}}>Show {showMore ? 'fewer' : 'more'} projects</H4>
                 </MoreButton>
             </ButtonSection>
         </SectionContainer>

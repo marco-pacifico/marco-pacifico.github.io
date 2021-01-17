@@ -70,6 +70,7 @@ export const query = graphql`
               title
               company
               description
+              link
               cardImage {
                 publicURL
               }

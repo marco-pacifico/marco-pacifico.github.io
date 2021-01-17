@@ -58,20 +58,34 @@ const WritingSection = ({ content, articles }) => {
                 {articlesToShow.map(({ node }) => {
                     const { fields, frontmatter } = node
                     const { slug } = fields
-                    const { company, title, description } = frontmatter
-                
+                    const { company, title, description, link } = frontmatter
+                    
+                    if (link === null) {
+                        return (
+                            <ArticleLI key={slug}>
+                                <Link to={slug}>
+                                    <PostCard
+                                        overline={company}
+                                        title={title}
+                                        description={description}
+                                    />
+                                </Link>
+                            </ArticleLI> 
+                        )
+                    }
+                    
                     return (
                         <ArticleLI key={slug}>
-                            <Link to={slug}>
+                            <a href={link} target="_blank">
                                 <PostCard
                                     overline={company}
                                     title={title}
                                     description={description}
                                 />
-                            </Link>
+                            </a>
                         </ArticleLI> 
-                        )
-                    }
+                    )
+                }
                 )}
             </ArticleUL>
         </SectionContainer>
