@@ -25,7 +25,8 @@ const markdownStyles = {
     blockquote: Blockquote,
     ArticleSection,
     Link,
-    ArticleHero
+    ArticleHero,
+    Img
 }
 
 

@@ -135,7 +135,9 @@ const GlobalStyles = createGlobalStyle`
   }
   img {
     border-style: none;
+    width: 100%;
   }
+ 
   fieldset {
     padding: 0.35em 0.75em 0.625em;
   }
