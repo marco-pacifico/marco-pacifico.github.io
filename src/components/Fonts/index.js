@@ -1,9 +1,9 @@
 import { css } from 'styled-components'
 
-import UntitledSerifRegular from "./font-files/UntitledSerif/untitled-serif-test-regular.woff"
-import UntitledSansLight from "./font-files/UntitledSans/untitled-sans-test-light.woff"
-import UntitledSansRegular from "./font-files/UntitledSans/untitled-sans-test-regular.woff"
-import UntitledSansMedium from "./font-files/UntitledSans/untitled-sans-test-medium.woff"
+import UntitledSerifRegular from "./font-files/UntitledSerif/untitled-serif-web-regular.woff"
+import UntitledSansLight from "./font-files/UntitledSans/untitled-sans-web-light.woff"
+import UntitledSansRegular from "./font-files/UntitledSans/untitled-sans-web-regular.woff"
+import UntitledSansMedium from "./font-files/UntitledSans/untitled-sans-web-medium.woff"
 
 const Fonts = css `
 
