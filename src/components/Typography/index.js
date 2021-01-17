@@ -17,7 +17,7 @@ export const NAVITEM = styled.p`
 // HOMEPAGE STYLES
 
 export const h1 = css`
-    font-size: min(80px, max(36px, ${theme.fontSize.t1}));
+    font-size: min(96px, max(36px, ${theme.fontSize.t1}));
     line-height: ${theme.lineHeight.htight};
     font-weight: 300;
     letter-spacing: ${theme.letterSpacing.tight};
@@ -29,11 +29,11 @@ export const H1 = styled.h1`
 
 export const H1A = styled.h1`
   ${h1};
-  color: var(--color-text-fourth);
+  color: var(--color-text-tertiary);
 `
 
 export const h2 = css`
-    font-size: min(80px, max(32px,${theme.fontSize.t2}));
+    font-size: min(96px, max(32px,${theme.fontSize.t2}));
     line-height: ${theme.lineHeight.hloose};
     font-weight: 300;
     letter-spacing: ${theme.letterSpacing.tight};
@@ -46,7 +46,7 @@ export const H2 = styled.h2`
 
 export const H2A = styled.h1`
   ${h2};
-  color: var(--color-text-fourth);
+  color: var(--color-text-tertiary);
 `
 
 export const h3 = css`
@@ -64,7 +64,7 @@ export const H3 = styled.h3`
 export const h4 = css`
   font-size: min(24px, max(18px,${theme.fontSize.t4}));
   line-height: ${theme.lineHeight.hloose};
-  font-weight: 400;
+  font-weight: 500;
   margin-bottom: ${theme.space.s4};
 `
 
@@ -110,20 +110,20 @@ export const OVERLINE = styled.p`
 export const MDH1 = styled.h1 `
   font-size: min(38px, max(28px, ${theme.fontSize.t3}));
   line-height: ${theme.lineHeight.htight};
-  font-weight: 400;
+  font-weight: 500;
   margin-top: min(80px, max(64px, ${theme.space.s3}));
   padding-bottom: 16px;
 `
 export const MDH2 = styled.h2`
-  font-size: min(32px, max(${theme.fontSize.pmid}, ${theme.fontSize.th2}));
+  font-size: min(30px, max(${theme.fontSize.pmid}, ${theme.fontSize.th2}));
   line-height: ${theme.lineHeight.hloose};
-  font-weight: 400;
+  font-weight: 500;
   margin-top: min(80px, max(64px, ${theme.space.s3}));
   padding-bottom: 8px;
 `
 
 export const MDP = styled.p`
-  /*font-family: ${theme.fonts.serif}; */
+  font-family: ${theme.fonts.serif}; 
   font-size: min(${theme.fontSize.pmax}, max(${theme.fontSize.pmin}, ${theme.fontSize.t4}));
   line-height: ${theme.lineHeight.ptight};
   font-weight: 400;

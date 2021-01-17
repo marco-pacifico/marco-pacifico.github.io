@@ -32,15 +32,15 @@ export const COLORS = {
         dark: '#C8C9D0',
     },
     'text-secondary':{
-        light: '#444',
+        light: '#383838',
         dark: '#e8e8e8',
     },
     'text-tertiary':{
-        light: '#888',
+        light: '#BDBBC3',
         dark: '#e8e8e8',
     },
     'text-fourth':{
-        light: '#BDBBC3',
+        light: '#A29A9A',
         dark: '#e8e8e8',
     },
 }
