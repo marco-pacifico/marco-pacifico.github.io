@@ -8,7 +8,7 @@ export const COLORS = {
         dark: '#212B31',
     },
     'background-secondary':{
-        light: '#F0F0F0',
+        light: '#F4F4F4',
         dark: '#29353D',
     },
     'border-primary':{

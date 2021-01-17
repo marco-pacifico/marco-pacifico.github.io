@@ -14,12 +14,17 @@ const SectionContainer = styled.div`
 
 const HeadingContainer = styled.div`
   padding-top: max(24px, ${theme.space.s1});
-  width: max(100%, 80vw);
 `
 const BodyContainer = styled.div`
     padding-top: max(16px, ${theme.space.s3});
-    padding-bottom: max(32px, ${theme.space.s2});
-    width: max(100%, 70vw);
+    margin-bottom: max(32px, ${theme.space.s1});
+    width: 70vw;
+
+    @media (max-width: 480px) {
+        width: 100%;
+  }
+
+    
 `
 const ProjectGrid = styled.div `
     display: grid;

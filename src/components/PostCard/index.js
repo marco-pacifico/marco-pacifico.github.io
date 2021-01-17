@@ -9,14 +9,7 @@ const CardContaner = styled.div `
     justify-content: space-between;
     max-width: max(100%,80vw);
     padding: max(24px, ${theme.space.s2}) 0; 
-    border-bottom: 1px solid var(--color-border-tertiary); 
     transition: all .25s ease-out;
-
-    &:hover {
-        z-index: 100;
-        border-bottom: 1px solid var(--color-border-tertiary); 
-        
-    }
 
     &:hover ${H4} a {
         background-size: 100% 100%;
