@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
 import theme from "../Theme"
-import {H1, H4} from '../Typography'
+import {H2, H4} from '../Typography'
 
 
 
@@ -36,7 +36,7 @@ const Footer = () => {
         <footer>
             <SectionContainer>
                 <HeadingContainer>
-                    <H1>Say hello</H1>
+                    <H2>Say hello</H2>
                 </HeadingContainer>
                 <BodyContainer>
                     <ArticleUL>
