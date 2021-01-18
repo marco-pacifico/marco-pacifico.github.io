@@ -102,38 +102,4 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   })
 }
 
-// https://www.gatsbyjs.org/docs/node-apis/#onCreateWebpackConfig
-exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
-  // https://www.gatsbyjs.org/docs/debugging-html-builds/#fixing-third-party-modules
-  if (stage === 'build-html') {
-    actions.setWebpackConfig({
-      module: {
-        rules: [
-          {
-            test: /scrollreveal/,
-            use: loaders.null(),
-          },
-          {
-            test: /animejs/,
-            use: loaders.null(),
-          },
-        ],
-      },
-    });
-  }
-
-  actions.setWebpackConfig({
-    resolve: {
-      alias: {
-        '@components': path.resolve(__dirname, 'src/components'),
-        '@templates': path.resolve(__dirname, 'src/templates'),
-        '@images': path.resolve(__dirname, 'src/content/images'),
-        '@pages': path.resolve(__dirname, 'src/pages'),
-        
-        
-      },
-    },
-  });
-};
-
 
