@@ -1,6 +1,5 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
-import Img from "gatsby-image"
 import { MDXProvider } from "@mdx-js/react"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import theme from '../components/Theme'
@@ -25,8 +24,7 @@ const markdownStyles = {
     blockquote: Blockquote,
     ArticleSection,
     Link,
-    ArticleHero,
-    Img
+    ArticleHero
 }
 
 
@@ -82,14 +80,6 @@ const PostTemplate = ({ data }) => {
         frontmatter {
           title
           description
-          heroImage {
-            publicURL 
-            childImageSharp {
-                fluid {
-                    ...GatsbyImageSharpFluid
-                }
-            }
-          }
         }
       }
 
