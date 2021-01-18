@@ -76,7 +76,7 @@ const WritingSection = ({ content, articles }) => {
                     
                     return (
                         <ArticleLI key={slug}>
-                            <a href={link} target="_blank">
+                            <a href={link} target="_blank" rel="noreferrer">
                                 <PostCard
                                     overline={company}
                                     title={title}
