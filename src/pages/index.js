@@ -3,7 +3,6 @@ import Layout from "../components/Layout"
 import HeroSection from "../components/HeroSection"
 import WorkSection from "../components/WorkSection"
 import WritingSection from "../components/WritingSection"
-import Footer from "../components/Footer"
 import { graphql } from "gatsby"
 
 const Home = ({ data }) => (
