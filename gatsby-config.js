@@ -44,10 +44,22 @@ module.exports = {
       },
     },
     {
+      resolve: "gatsby-plugin-page-creator",
+      options: {
+        path: `${__dirname}/src/content/posts`,
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/src/content/projects`,
         name: `projects`,
+      },
+    },
+    {
+      resolve: "gatsby-plugin-page-creator",
+      options: {
+        path: `${__dirname}/src/content/projects`,
       },
     },
     {
