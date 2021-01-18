@@ -5,7 +5,6 @@ import { MDXRenderer } from "gatsby-plugin-mdx"
 import theme from '../components/Theme'
 import Layout from "../components/Layout"
 import ArticleHero from "../components/ArticleHero"
-import ArticleSection from "../components/ArticleSection"
 import styled from "styled-components"
 import { MDH1, MDH2, MDP, OVERLINE, Blockquote, Ul, Ol, Li} from "../components/Typography"
 import SeeMorePosts from "../components/SeeMorePosts"
@@ -22,7 +21,6 @@ const markdownStyles = {
     ol: Ol,
     li: Li,
     blockquote: Blockquote,
-    ArticleSection,
     Link,
     ArticleHero
 }
