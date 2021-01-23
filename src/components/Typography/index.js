@@ -51,7 +51,7 @@ export const H2A = styled.h1`
 
 export const h3 = css`
   font-size: min(72px, max(22px,${theme.fontSize.t3}));
-  line-height: ${theme.lineHeight.ptight};
+  line-height: ${theme.lineHeight.hloose};
   font-weight: 300;
   color: var(--color-text-primary);
   letter-spacing: ${theme.letterSpacing.tight};

@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import theme from "../Theme"
-import {H2, H1A} from '../Typography'
+import {H1, H1A, H2A} from '../Typography'
 
 
 const SectionContainer = styled.div`
@@ -23,7 +23,7 @@ const HeadingContainer = styled.div`
 `
 const BodyContainer = styled.div`
     padding-top: ${theme.space.s3};
-    width: min(800px,90vw);
+    width: 90vw;
     max-width: 1600px;
 `
 
@@ -34,10 +34,10 @@ const HeroSection = ({ data }) => {
     return (
     <SectionContainer>
         <HeadingContainer>
-            <H1A>{greeting} I'm {name} </H1A>
+            <H1A>{greeting} I’m {name} </H1A>
         </HeadingContainer>
         <BodyContainer>
-            <H2>{role} {location}</H2>
+            <H1>{role} <br /> {location}</H1>
         </BodyContainer>
     </SectionContainer>
     )

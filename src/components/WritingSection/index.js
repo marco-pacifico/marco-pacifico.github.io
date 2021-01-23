@@ -20,7 +20,7 @@ const HeadingContainer = styled.div`
 const BodyContainer = styled.div`
     padding-top: max(16px, ${theme.space.s3});
     margin-bottom: max(16px, ${theme.space.s3});
-    width: 70vw;
+    width: 80vw;
 
     @media (max-width: 480px) {
         width: 100%;
