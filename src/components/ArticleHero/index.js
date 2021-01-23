@@ -13,7 +13,7 @@ const SectionContainer = styled.div`
 `
 
 const LeftContainer = styled.div`
-  width: 70vw;
+  width: 60vw;
   align-self: center;
 
   @media (max-width: 480px) {
@@ -28,7 +28,7 @@ const Title = styled.div `
 `
 
 const RightContainer = styled.div`
-    width: 30vw;
+    width: 40vw;
     text-align: right;
     align-self: center;
 
