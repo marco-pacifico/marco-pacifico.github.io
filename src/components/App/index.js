@@ -7,7 +7,7 @@ import GlobalStyles from '../GlobalStyles';
 function App({ children }) {
   return (
     <ThemeProvider>
-      <GlobalStyles />
+      <GlobalStyles/>
       {children}
     </ThemeProvider>
   );
