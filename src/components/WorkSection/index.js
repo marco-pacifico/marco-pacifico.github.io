@@ -17,7 +17,7 @@ const HeadingContainer = styled.div`
 `
 const BodyContainer = styled.div`
     padding-top: max(16px, ${theme.space.s3});
-    margin-bottom: max(32px, ${theme.space.s1});
+    margin-bottom: max(40px, ${theme.space.s1});
     width: 80vw;
 
     @media (max-width: 480px) {
@@ -88,6 +88,7 @@ const MoreButton = styled.button `
     background: transparent;
     border-radius: max(8px,0.64rem);
     cursor: pointer;
+    font-weight: 400;
 
     :hover {
         background: var(--color-background-secondary);
@@ -136,7 +137,7 @@ const WorkSection = ({ content, projects }) => {
             </ProjectGrid>
             <ButtonSection>
                 <MoreButton onClick={() => setShowMore(!showMore)}>
-                    <H4 style={{margin:0}}>Show {showMore ? 'fewer' : 'more'} projects</H4>
+                    <H4 style={{margin:0, fontWeight:400}}>Show {showMore ? 'fewer' : 'more'} projects</H4>
                 </MoreButton>
             </ButtonSection>
         </SectionContainer>

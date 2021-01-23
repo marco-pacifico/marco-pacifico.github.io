@@ -32,11 +32,11 @@ const ArticleUL = styled.ul `
 `
 const ArticleLI = styled.li `
 
-    border-bottom: 1px solid var(--color-border-tertiary); 
+    /*border-bottom: 1px solid var(--color-border-tertiary); 
     
     &:last-of-type {
         border-bottom: none;
-    }   
+    } */  
 
 `
 

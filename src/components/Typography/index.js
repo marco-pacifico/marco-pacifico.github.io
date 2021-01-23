@@ -33,7 +33,7 @@ export const H1A = styled.h1`
 `
 
 export const h2 = css`
-    font-size: min(96px, max(32px,${theme.fontSize.t2}));
+    font-size: min(96px, max(36px,${theme.fontSize.t2}));
     line-height: ${theme.lineHeight.hloose};
     font-weight: 300;
     letter-spacing: ${theme.letterSpacing.tight};
@@ -50,7 +50,7 @@ export const H2A = styled.h1`
 `
 
 export const h3 = css`
-  font-size: min(72px, max(22px,${theme.fontSize.t3}));
+  font-size: min(72px, max(26px,${theme.fontSize.t3}));
   line-height: ${theme.lineHeight.hloose};
   font-weight: 300;
   color: var(--color-text-primary);
@@ -65,7 +65,7 @@ export const h4 = css`
   font-size: min(24px, max(18px,${theme.fontSize.t4}));
   line-height: ${theme.lineHeight.hloose};
   font-weight: 500;
-  margin-bottom: ${theme.space.s4};
+  margin-bottom: max(8px, 0.8rem);
 `
 
 export const H4 = styled.h4`

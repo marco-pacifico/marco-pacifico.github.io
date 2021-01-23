@@ -46,11 +46,16 @@ const GlobalStyles = createGlobalStyle`
     height: 100%;
   }
 
+  button {
+    font-family: ${theme.fonts.sans};
+    color: var(--color-text-primary);
+  }
+
   a {
     color: currentColor;
     text-decoration: none;
     border-bottom: 1px solid var(--color-border-tertiary);
-    padding-bottom: 8px;
+    padding-bottom: max(4px, ${theme.space.s6});
     position: relative;
     }
 

@@ -28,7 +28,7 @@ const Title = styled.div `
 `
 
 const RightContainer = styled.div`
-    width: 60vw;
+    width: 30vw;
     text-align: right;
     align-self: center;
 
