@@ -34,7 +34,7 @@ const PageContainer = styled.div`
 `
 
 const PostContainer = styled.div`
-    width: min(620px, max(312px,64ch));
+    width: min(620px, max(312px,58ch));
     margin: 0 auto;
 
     @media (max-width: 480px) {
