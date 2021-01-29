@@ -115,11 +115,12 @@ export const MDH1 = styled.h1 `
   padding-bottom: 16px;
 `
 export const MDH2 = styled.h2`
-  font-size: min(30px, max(${theme.fontSize.pmid}, ${theme.fontSize.th2}));
+  font-size: min(28px, max(${theme.fontSize.pmid}, ${theme.fontSize.th2}));
   line-height: ${theme.lineHeight.hloose};
   font-weight: 500;
+  letter-spacing: ${theme.letterSpacing.tight};
   margin-top: min(80px, max(64px, ${theme.space.s3}));
-  padding-bottom: 8px;
+  /*padding-bottom: 8px;*/
 `
 
 export const MDP = styled.p`
@@ -177,6 +178,7 @@ export const list = css`
   font-family: ${theme.fonts.serif};
   font-size: min(${theme.fontSize.pmax}, max(${theme.fontSize.pmin}, ${theme.fontSize.t4}));
   line-height: ${theme.lineHeight.ptight};
+  color: var(--color-text-secondary);
   font-weight: 400;
   margin-bottom: max(24px,${theme.space.s3});
   margin-left: max(24px,${theme.space.s3});
