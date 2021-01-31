@@ -17,7 +17,7 @@ export const NAVITEM = styled.p`
 // HOMEPAGE STYLES
 
 export const h1 = css`
-    font-size: min(96px, max(36px, ${theme.fontSize.t1}));
+    font-size: min(128px, max(36px, ${theme.fontSize.t1}));
     line-height: ${theme.lineHeight.htight};
     font-weight: 300;
     letter-spacing: ${theme.letterSpacing.tight};

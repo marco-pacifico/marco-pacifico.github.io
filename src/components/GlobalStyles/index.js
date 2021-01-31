@@ -60,7 +60,6 @@ const GlobalStyles = createGlobalStyle`
     }
 
     a::after {
-        position: absolute;
         bottom: -1px;
         content: "";
         display: block;
