@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import theme from "../Theme"
-import {H1, H1A, H2A} from '../Typography'
+import {H1, H1A} from '../Typography'
 
 
 const SectionContainer = styled.div`

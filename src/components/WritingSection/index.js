@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import styled from "styled-components"
 import theme from "../Theme"
-import {H2, H3} from '../Typography'
+import {H2, H3, H4} from '../Typography'
 import PostCard from "../PostCard"
 
 
@@ -39,10 +39,35 @@ const ArticleLI = styled.li `
     } */  
 
 `
+const ButtonSection = styled.div `
+  display: grid;
+  align-items: center;
+  border-top: 1px solid var(--color-border-tertiary);
+  border-bottom: 1px solid var(--color-border-tertiary);
+  margin-top: max(24px,${theme.space.s2});
+
+`
+
+const MoreButton = styled.button `
+    padding: max(8px,${theme.space.s5}) max(12px,${theme.space.s4});
+    margin: max(16px,${theme.space.s3}) auto;
+    background: transparent;
+    border-radius: max(8px,0.64rem);
+    cursor: pointer;
+    font-weight: 400;
+
+    :hover {
+        background: var(--color-background-secondary);
+    }
+
+    :focus {
+        outline: none;
+    }
+`
 
 const WritingSection = ({ content, articles }) => {
     const [showMore, setShowMore] = useState(false)
-    const articleLimit = 10
+    const articleLimit = 5
     const firstArticles = articles.slice(0, articleLimit);
     const articlesToShow = showMore ? articles : firstArticles;
 
@@ -88,6 +113,11 @@ const WritingSection = ({ content, articles }) => {
                 }
                 )}
             </ArticleUL>
+            <ButtonSection>
+                <MoreButton onClick={() => setShowMore(!showMore)}>
+                    <H4 style={{margin:0, fontWeight:400}}>Show {showMore ? 'fewer' : 'more'} posts</H4>
+                </MoreButton>
+            </ButtonSection>
         </SectionContainer>
     )
 }
