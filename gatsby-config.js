@@ -91,6 +91,9 @@ module.exports = {
               linkImagesToOriginal: false
             },
           },
+          {
+            resolve: 'gatsby-remark-gifs',
+          },
         ],
       },
     },
