@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
 import theme from "../Theme"
-import {H2, H4} from '../Typography'
+import {H1, H4} from '../Typography'
 
 
 
@@ -36,24 +36,24 @@ const Footer = () => {
         <footer>
             <SectionContainer>
                 <HeadingContainer>
-                    <H2>Say hello</H2>
+                    <H1>Say hello</H1>
                 </HeadingContainer>
                 <BodyContainer>
                     <ArticleUL>
                         <ArticleLI>
-                            <H4><Link to="/">Email</Link></H4>
+                            <H4><a href="mailto:marco.pacifico@gmail.com" target="_blank" rel="noreferrer">Email</a></H4>
                         </ArticleLI> 
                         <ArticleLI>
-                            <H4><Link to="/">LinkedIn</Link></H4>
+                            <H4><a href="https://www.linkedin.com/in/marcopacifico/" target="_blank" rel="noreferrer">LinkedIn</a></H4>
                         </ArticleLI> 
                         <ArticleLI>
-                            <H4><Link to="/">Twitter</Link></H4>
+                            <H4><a href="https://twitter.com/marcopacifico" target="_blank" rel="noreferrer">Twitter</a></H4> 
                         </ArticleLI> 
                         <ArticleLI>
-                            <H4><Link to="/">Dribbble</Link></H4>
+                            <H4><a href="https://dribbble.com/marcopacifico" target="_blank" rel="noreferrer">Dribbble</a></H4>
                         </ArticleLI> 
-                        <ArticleLI>
-                            <H4><Link to="/">Instagram</Link></H4>
+                        <ArticleLI> 
+                            <H4><a href="https://www.instagram.com/marcopacifico" target="_blank" rel="noreferrer">Instagram</a></H4>
                         </ArticleLI> 
                     </ArticleUL>
                 </BodyContainer>
