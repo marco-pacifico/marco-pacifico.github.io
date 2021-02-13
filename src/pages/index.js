@@ -1,5 +1,6 @@
 import React from "react"
 import Layout from "../components/Layout"
+import SEO from "../components/SEO"
 import HeroSection from "../components/HeroSection"
 import WorkSection from "../components/WorkSection"
 import WritingSection from "../components/WritingSection"
@@ -7,6 +8,7 @@ import { graphql } from "gatsby"
 
 const Home = ({ data }) => (
     <Layout>
+      <SEO title="Design Portfolio" description="Product Design Portfolio and Blog" />
         <HeroSection data={data.hero.edges} />
         <WorkSection content={data.work.edges} projects={data.projects.edges} />
         <WritingSection content={data.writing.edges} articles={data.posts.edges} />

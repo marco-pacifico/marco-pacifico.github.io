@@ -10,8 +10,11 @@ module.exports = {
   },
   siteMetadata: {
     title: `Marco Pacifico`,
+    description: 'Product design portfolio and blog.',
+    author: 'Marco Pacifico'
   },
   plugins: [
+    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

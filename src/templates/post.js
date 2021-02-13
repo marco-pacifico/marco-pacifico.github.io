@@ -4,6 +4,7 @@ import { MDXProvider } from "@mdx-js/react"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import theme from '../components/Theme'
 import Layout from "../components/Layout"
+import SEO from "../components/SEO"
 import ArticleHero from "../components/ArticleHero"
 import styled from "styled-components"
 import { MDH1, MDH2, MDP, OVERLINE, Blockquote, Ul, Ol, Li} from "../components/Typography"
@@ -46,6 +47,7 @@ const PostTemplate = ({ data }) => {
 
     return (
     <Layout>
+      <SEO title={data.post.frontmatter.title} description={data.post.description} />
         <ArticleHero 
                 title={data.post.frontmatter.title}
                 body={data.post.frontmatter.description}
