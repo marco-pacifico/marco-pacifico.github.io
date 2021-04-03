@@ -24,8 +24,8 @@ const theme = {
       t5: '1.2rem',
       t6: '0.96rem',
       pmin: '20px',
-      pmid: '23px',
-      pmax: '25px',
+      pmid: '22px',
+      pmax: '24px',
     },
     fonts: {
       sans: "Untitled Sans, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",

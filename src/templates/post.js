@@ -7,17 +7,19 @@ import Layout from "../components/Layout"
 import SEO from "../components/SEO"
 import ArticleHero from "../components/ArticleHero"
 import styled from "styled-components"
-import { MDH1, MDH2, MDP, OVERLINE, Blockquote, Ul, Ol, Li} from "../components/Typography"
+import { MDH1, MDH2, MDH3, MDP, MDPS, OVERLINE, Blockquote, Ul, Ol, Li} from "../components/Typography"
 import SeeMorePosts from "../components/SeeMorePosts"
 
 const markdownStyles = {
     h1: MDH1,
     h2: MDH2,
-    h3: OVERLINE,
+    h3: MDH3,
     h4: MDH2,
     h5: MDH2,
-    h6: MDH2,
+    h6: OVERLINE,
     p: MDP,
+    strong: MDPS,
+    em: MDPS,
     ul: Ul,
     ol: Ol,
     li: Li,
@@ -35,7 +37,7 @@ const PageContainer = styled.div`
 `
 
 const PostContainer = styled.div`
-    width: min(620px, max(312px,58ch));
+    width: min(640px, max(312px,62ch));
     margin: 0 auto;
 
     @media (max-width: 480px) {

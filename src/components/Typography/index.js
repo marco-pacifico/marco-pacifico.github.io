@@ -123,6 +123,16 @@ export const MDH2 = styled.h2`
   /*padding-bottom: 8px;*/
 `
 
+export const MDH3 = styled.h3`
+  font-size: min(${theme.fontSize.pmax}, max(${theme.fontSize.pmin}, ${theme.fontSize.t4}));
+  line-height: ${theme.lineHeight.ptight};
+  font-weight: 500;
+  letter-spacing: ${theme.letterSpacing.tight};
+  margin-top: min(40px, max(24px, ${theme.space.s4}));
+  /*margin-top: min(80px, max(64px, ${theme.space.s3}));
+  /*padding-bottom: 8px;*/
+`
+
 export const MDP = styled.p`
   font-family: ${theme.fonts.serif}; 
   font-size: min(${theme.fontSize.pmax}, max(${theme.fontSize.pmin}, ${theme.fontSize.t4}));
@@ -132,6 +142,16 @@ export const MDP = styled.p`
   margin-top: min(24px, max(12px, ${theme.space.s5}));
   padding-bottom: min(24px, max(12px, ${theme.space.s5}));
 `
+export const MDPS = styled.strong`
+  font-family: ${theme.fonts.sans}; 
+  font-size: min(${theme.fontSize.pmax}, max(${theme.fontSize.pmin}, ${theme.fontSize.t4}));
+  line-height: ${theme.lineHeight.ptight};
+  font-weight: 500;
+  color: var(--color-text-secondary);
+  margin-top: min(24px, max(12px, ${theme.space.s5}));
+  padding-bottom: min(24px, max(12px, ${theme.space.s5}));
+`
+
 export const blockquote = css`
   width: 150%;
   padding-left: max(16px,${theme.space.s3});
