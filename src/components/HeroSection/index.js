@@ -9,7 +9,7 @@ const SectionContainer = styled.div`
   margin-left: ${theme.space.site};
   display: flex;
   justify-content: center;
-  align-items: end;
+  align-items: start;
   flex-direction: column;
   height: 76vh;
   padding: auto 0;
